@@ -1,0 +1,13 @@
+"""
+create patient with id,name, and spec
+"""
+import typing
+from datetime import date
+class Patient:
+    def __init__(self,id:name,dob: date,ailment: str):
+        self.id = id
+        self.name = name
+        self.dob = dob
+        self.ailment = ailment
+    def __str__(self):
+        return f"Patient {id={self.id}, name: '{self.name}', dob: '{self.dob}', ailment: '{self.ailment}'}"

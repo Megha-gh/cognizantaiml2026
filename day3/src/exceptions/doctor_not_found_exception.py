@@ -1,0 +1,10 @@
+"""
+create doctor not found exception
+"""
+class DoctorNotFoundException(Exception):#doctor id not found
+    """
+    doctor not found exception
+    """
+    def __init__(self, message="doctor not found"):
+        self.message = message
+        super().__init__(self.message)
