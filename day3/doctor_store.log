@@ -1,0 +1,30 @@
+2026-04-17 07:05:12 - doctor_store - INFO - Adding doctor: Doctor(id=1, name='Dr. Mckee', specialization='Ophthalmology')
+2026-04-17 07:05:12 - doctor_store - INFO - Adding doctor: Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')
+2026-04-17 07:05:12 - doctor_store - INFO - Adding doctor: Doctor(id=3, name='Dr. Fritz', specialization='Pediatrics')
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving doctor with ID: 1
+2026-04-17 07:05:12 - doctor_store - INFO - Updating doctor with ID: 1
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving doctor with ID: 1
+2026-04-17 07:05:12 - doctor_store - INFO - Doctor updated: Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')
+2026-04-17 07:05:12 - doctor_store - INFO - Deleting doctor with ID: 3
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving doctor with ID: 3
+2026-04-17 07:05:12 - doctor_store - INFO - Doctor deleted: Doctor(id=3, name='Dr. Fritz', specialization='Pediatrics')
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 07:05:12 - doctor_store - INFO - Updating doctor with ID: 999
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving doctor with ID: 999
+2026-04-17 07:05:12 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 07:05:32 - doctor_store - INFO - Adding doctor: Doctor(id=1, name='Dr. Hartman', specialization='Pediatrics')
+2026-04-17 07:05:32 - doctor_store - INFO - Adding doctor: Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')
+2026-04-17 07:05:32 - doctor_store - INFO - Adding doctor: Doctor(id=3, name='Dr. Stanton', specialization='Cardiology')
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving doctor with ID: 1
+2026-04-17 07:05:32 - doctor_store - INFO - Updating doctor with ID: 1
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving doctor with ID: 1
+2026-04-17 07:05:32 - doctor_store - INFO - Doctor updated: Doctor(id=1, name='Dr. Burns', specialization='Ophthalmology')
+2026-04-17 07:05:32 - doctor_store - INFO - Deleting doctor with ID: 3
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving doctor with ID: 3
+2026-04-17 07:05:32 - doctor_store - INFO - Doctor deleted: Doctor(id=3, name='Dr. Stanton', specialization='Cardiology')
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 07:05:32 - doctor_store - INFO - Updating doctor with ID: 999
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving doctor with ID: 999
+2026-04-17 07:05:32 - doctor_store - INFO - Retrieving all doctors

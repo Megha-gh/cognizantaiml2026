@@ -21,7 +21,7 @@ from src.exceptions.AppointmentNotFoundException import AppointmentNotFoundExcep
 
 from conf.logger_conf import setup_logger
 
-logger = setup_logger()
+logger = setup_logger("healthcare.log")
 fake = Faker()
 
 # Specializations for doctors

@@ -482,3 +482,121 @@
 2026-04-17 06:30:40 - healthcare_logger - INFO - Retrieving appointment with ID: 999
 2026-04-17 06:30:40 - healthcare_logger - ERROR - Exception caught: Appointment with ID 999 not found
 2026-04-17 06:30:40 - healthcare_logger - INFO - Healthcare Application completed successfully
+2026-04-17 07:05:12 - healthcare - INFO - Starting Healthcare Application with Faker-generated data
+2026-04-17 07:05:12 - healthcare - INFO - === DOCTOR CRUD OPERATIONS ===
+2026-04-17 07:05:12 - healthcare - INFO - --- ADD DOCTORS (Using Faker) ---
+2026-04-17 07:05:12 - healthcare - INFO - Added: Doctor(id=1, name='Dr. Mckee', specialization='Ophthalmology')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Doctor(id=3, name='Dr. Fritz', specialization='Pediatrics')
+2026-04-17 07:05:12 - healthcare - INFO - Added 3 doctors
+2026-04-17 07:05:12 - healthcare - INFO - --- READ ALL DOCTORS ---
+2026-04-17 07:05:12 - healthcare - INFO - Doctor: Doctor(id=1, name='Dr. Mckee', specialization='Ophthalmology')
+2026-04-17 07:05:12 - healthcare - INFO - Doctor: Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')
+2026-04-17 07:05:12 - healthcare - INFO - Doctor: Doctor(id=3, name='Dr. Fritz', specialization='Pediatrics')
+2026-04-17 07:05:12 - healthcare - INFO - --- READ DOCTOR BY ID ---
+2026-04-17 07:05:12 - healthcare - INFO - Retrieved: Doctor(id=1, name='Dr. Mckee', specialization='Ophthalmology')
+2026-04-17 07:05:12 - healthcare - INFO - --- UPDATE DOCTOR ---
+2026-04-17 07:05:12 - healthcare - INFO - Updated: Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')
+2026-04-17 07:05:12 - healthcare - INFO - --- DELETE DOCTOR ---
+2026-04-17 07:05:12 - healthcare - INFO - Deleted: Doctor(id=3, name='Dr. Fritz', specialization='Pediatrics')
+2026-04-17 07:05:12 - healthcare - INFO - Remaining doctors: 2
+2026-04-17 07:05:12 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:12 - healthcare - ERROR - Exception caught: Doctor with ID 999 not found
+2026-04-17 07:05:12 - healthcare - INFO - === PATIENT CRUD OPERATIONS ===
+2026-04-17 07:05:12 - healthcare - INFO - --- ADD PATIENTS (Using Faker) ---
+2026-04-17 07:05:12 - healthcare - INFO - Added: Patient(id=1, name='Casey Decker', dob='1973-09-07', ailment='Migraine')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Patient(id=3, name='Rachel Vasquez', dob='1978-05-06', ailment='Asthma')
+2026-04-17 07:05:12 - healthcare - INFO - Added 3 patients
+2026-04-17 07:05:12 - healthcare - INFO - --- READ ALL PATIENTS ---
+2026-04-17 07:05:12 - healthcare - INFO - Patient: Patient(id=1, name='Casey Decker', dob='1973-09-07', ailment='Migraine')
+2026-04-17 07:05:12 - healthcare - INFO - Patient: Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')
+2026-04-17 07:05:12 - healthcare - INFO - Patient: Patient(id=3, name='Rachel Vasquez', dob='1978-05-06', ailment='Asthma')
+2026-04-17 07:05:12 - healthcare - INFO - --- READ PATIENT BY ID ---
+2026-04-17 07:05:12 - healthcare - INFO - Retrieved: Patient(id=1, name='Casey Decker', dob='1973-09-07', ailment='Migraine')
+2026-04-17 07:05:12 - healthcare - INFO - --- UPDATE PATIENT ---
+2026-04-17 07:05:12 - healthcare - INFO - Updated: Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')
+2026-04-17 07:05:12 - healthcare - INFO - --- DELETE PATIENT ---
+2026-04-17 07:05:12 - healthcare - INFO - Deleted: Patient(id=3, name='Rachel Vasquez', dob='1978-05-06', ailment='Asthma')
+2026-04-17 07:05:12 - healthcare - INFO - Remaining patients: 2
+2026-04-17 07:05:12 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:12 - healthcare - ERROR - Exception caught: Patient with ID 999 not found
+2026-04-17 07:05:12 - healthcare - INFO - === APPOINTMENT CRUD OPERATIONS ===
+2026-04-17 07:05:12 - healthcare - INFO - --- ADD APPOINTMENTS (Using Faker) ---
+2026-04-17 07:05:12 - healthcare - INFO - Added: Appointment(id=1, patient='Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')', date='2026-05-06', time='15:45:00')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Appointment(id=2, patient='Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')', doctor='Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')', date='2026-04-17', time='13:30:00')
+2026-04-17 07:05:12 - healthcare - INFO - Added: Appointment(id=3, patient='Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')', doctor='Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')', date='2026-05-05', time='14:15:00')
+2026-04-17 07:05:12 - healthcare - INFO - Added 3 appointments
+2026-04-17 07:05:12 - healthcare - INFO - --- READ ALL APPOINTMENTS ---
+2026-04-17 07:05:12 - healthcare - INFO - Appointment: Appointment(id=1, patient='Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')', date='2026-05-06', time='15:45:00')
+2026-04-17 07:05:12 - healthcare - INFO - Appointment: Appointment(id=2, patient='Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')', doctor='Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')', date='2026-04-17', time='13:30:00')
+2026-04-17 07:05:12 - healthcare - INFO - Appointment: Appointment(id=3, patient='Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')', doctor='Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')', date='2026-05-05', time='14:15:00')
+2026-04-17 07:05:12 - healthcare - INFO - --- READ APPOINTMENT BY ID ---
+2026-04-17 07:05:12 - healthcare - INFO - Retrieved: Appointment(id=1, patient='Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')', date='2026-05-06', time='15:45:00')
+2026-04-17 07:05:12 - healthcare - INFO - --- UPDATE APPOINTMENT ---
+2026-04-17 07:05:12 - healthcare - INFO - Updated: Appointment(id=1, patient='Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Phelps', specialization='Dermatology')', date='2026-05-06', time='10:30:00')
+2026-04-17 07:05:12 - healthcare - INFO - --- DELETE APPOINTMENT ---
+2026-04-17 07:05:12 - healthcare - INFO - Deleted: Appointment(id=3, patient='Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')', doctor='Doctor(id=2, name='Dr. Baldwin', specialization='Dermatology')', date='2026-05-05', time='14:15:00')
+2026-04-17 07:05:12 - healthcare - INFO - Remaining appointments: 2
+2026-04-17 07:05:12 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:12 - healthcare - ERROR - Exception caught: Appointment with ID 999 not found
+2026-04-17 07:05:12 - healthcare - INFO - Healthcare Application completed successfully
+2026-04-17 07:05:32 - healthcare - INFO - Starting Healthcare Application with Faker-generated data
+2026-04-17 07:05:32 - healthcare - INFO - === DOCTOR CRUD OPERATIONS ===
+2026-04-17 07:05:32 - healthcare - INFO - --- ADD DOCTORS (Using Faker) ---
+2026-04-17 07:05:32 - healthcare - INFO - Added: Doctor(id=1, name='Dr. Hartman', specialization='Pediatrics')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Doctor(id=3, name='Dr. Stanton', specialization='Cardiology')
+2026-04-17 07:05:32 - healthcare - INFO - Added 3 doctors
+2026-04-17 07:05:32 - healthcare - INFO - --- READ ALL DOCTORS ---
+2026-04-17 07:05:32 - healthcare - INFO - Doctor: Doctor(id=1, name='Dr. Hartman', specialization='Pediatrics')
+2026-04-17 07:05:32 - healthcare - INFO - Doctor: Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')
+2026-04-17 07:05:32 - healthcare - INFO - Doctor: Doctor(id=3, name='Dr. Stanton', specialization='Cardiology')
+2026-04-17 07:05:32 - healthcare - INFO - --- READ DOCTOR BY ID ---
+2026-04-17 07:05:32 - healthcare - INFO - Retrieved: Doctor(id=1, name='Dr. Hartman', specialization='Pediatrics')
+2026-04-17 07:05:32 - healthcare - INFO - --- UPDATE DOCTOR ---
+2026-04-17 07:05:32 - healthcare - INFO - Updated: Doctor(id=1, name='Dr. Burns', specialization='Ophthalmology')
+2026-04-17 07:05:32 - healthcare - INFO - --- DELETE DOCTOR ---
+2026-04-17 07:05:32 - healthcare - INFO - Deleted: Doctor(id=3, name='Dr. Stanton', specialization='Cardiology')
+2026-04-17 07:05:32 - healthcare - INFO - Remaining doctors: 2
+2026-04-17 07:05:32 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:32 - healthcare - ERROR - Exception caught: Doctor with ID 999 not found
+2026-04-17 07:05:32 - healthcare - INFO - === PATIENT CRUD OPERATIONS ===
+2026-04-17 07:05:32 - healthcare - INFO - --- ADD PATIENTS (Using Faker) ---
+2026-04-17 07:05:32 - healthcare - INFO - Added: Patient(id=1, name='Kenneth Baker', dob='1988-07-11', ailment='Flu')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Patient(id=3, name='Heidi Richard', dob='2006-04-30', ailment='Cold')
+2026-04-17 07:05:32 - healthcare - INFO - Added 3 patients
+2026-04-17 07:05:32 - healthcare - INFO - --- READ ALL PATIENTS ---
+2026-04-17 07:05:32 - healthcare - INFO - Patient: Patient(id=1, name='Kenneth Baker', dob='1988-07-11', ailment='Flu')
+2026-04-17 07:05:32 - healthcare - INFO - Patient: Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')
+2026-04-17 07:05:32 - healthcare - INFO - Patient: Patient(id=3, name='Heidi Richard', dob='2006-04-30', ailment='Cold')
+2026-04-17 07:05:32 - healthcare - INFO - --- READ PATIENT BY ID ---
+2026-04-17 07:05:32 - healthcare - INFO - Retrieved: Patient(id=1, name='Kenneth Baker', dob='1988-07-11', ailment='Flu')
+2026-04-17 07:05:32 - healthcare - INFO - --- UPDATE PATIENT ---
+2026-04-17 07:05:32 - healthcare - INFO - Updated: Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')
+2026-04-17 07:05:32 - healthcare - INFO - --- DELETE PATIENT ---
+2026-04-17 07:05:32 - healthcare - INFO - Deleted: Patient(id=3, name='Heidi Richard', dob='2006-04-30', ailment='Cold')
+2026-04-17 07:05:32 - healthcare - INFO - Remaining patients: 2
+2026-04-17 07:05:32 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:32 - healthcare - ERROR - Exception caught: Patient with ID 999 not found
+2026-04-17 07:05:32 - healthcare - INFO - === APPOINTMENT CRUD OPERATIONS ===
+2026-04-17 07:05:32 - healthcare - INFO - --- ADD APPOINTMENTS (Using Faker) ---
+2026-04-17 07:05:32 - healthcare - INFO - Added: Appointment(id=1, patient='Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-04-27', time='12:00:00')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Appointment(id=2, patient='Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-05-15', time='13:15:00')
+2026-04-17 07:05:32 - healthcare - INFO - Added: Appointment(id=3, patient='Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')', doctor='Doctor(id=1, name='Dr. Burns', specialization='Ophthalmology')', date='2026-05-14', time='12:30:00')
+2026-04-17 07:05:32 - healthcare - INFO - Added 3 appointments
+2026-04-17 07:05:32 - healthcare - INFO - --- READ ALL APPOINTMENTS ---
+2026-04-17 07:05:32 - healthcare - INFO - Appointment: Appointment(id=1, patient='Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-04-27', time='12:00:00')
+2026-04-17 07:05:32 - healthcare - INFO - Appointment: Appointment(id=2, patient='Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-05-15', time='13:15:00')
+2026-04-17 07:05:32 - healthcare - INFO - Appointment: Appointment(id=3, patient='Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')', doctor='Doctor(id=1, name='Dr. Burns', specialization='Ophthalmology')', date='2026-05-14', time='12:30:00')
+2026-04-17 07:05:32 - healthcare - INFO - --- READ APPOINTMENT BY ID ---
+2026-04-17 07:05:32 - healthcare - INFO - Retrieved: Appointment(id=1, patient='Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-04-27', time='12:00:00')
+2026-04-17 07:05:32 - healthcare - INFO - --- UPDATE APPOINTMENT ---
+2026-04-17 07:05:32 - healthcare - INFO - Updated: Appointment(id=1, patient='Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')', doctor='Doctor(id=2, name='Dr. Steele', specialization='Orthopedics')', date='2026-04-27', time='12:15:00')
+2026-04-17 07:05:32 - healthcare - INFO - --- DELETE APPOINTMENT ---
+2026-04-17 07:05:32 - healthcare - INFO - Deleted: Appointment(id=3, patient='Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')', doctor='Doctor(id=1, name='Dr. Burns', specialization='Ophthalmology')', date='2026-05-14', time='12:30:00')
+2026-04-17 07:05:32 - healthcare - INFO - Remaining appointments: 2
+2026-04-17 07:05:32 - healthcare - INFO - --- ERROR HANDLING ---
+2026-04-17 07:05:32 - healthcare - ERROR - Exception caught: Appointment with ID 999 not found
+2026-04-17 07:05:32 - healthcare - INFO - Healthcare Application completed successfully

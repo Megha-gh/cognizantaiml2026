@@ -1,0 +1,30 @@
+2026-04-17 07:05:12 - patient_store - INFO - Adding patient: Patient(id=1, name='Casey Decker', dob='1973-09-07', ailment='Migraine')
+2026-04-17 07:05:12 - patient_store - INFO - Adding patient: Patient(id=2, name='Stephen Robertson', dob='2000-04-25', ailment='Hypertension')
+2026-04-17 07:05:12 - patient_store - INFO - Adding patient: Patient(id=3, name='Rachel Vasquez', dob='1978-05-06', ailment='Asthma')
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving all patients
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving patient with ID: 1
+2026-04-17 07:05:12 - patient_store - INFO - Updating patient with ID: 1
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving patient with ID: 1
+2026-04-17 07:05:12 - patient_store - INFO - Patient updated: Patient(id=1, name='Mary Gonzalez', dob='1973-09-07', ailment='Flu')
+2026-04-17 07:05:12 - patient_store - INFO - Deleting patient with ID: 3
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving patient with ID: 3
+2026-04-17 07:05:12 - patient_store - INFO - Patient deleted: Patient(id=3, name='Rachel Vasquez', dob='1978-05-06', ailment='Asthma')
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving all patients
+2026-04-17 07:05:12 - patient_store - INFO - Updating patient with ID: 999
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving patient with ID: 999
+2026-04-17 07:05:12 - patient_store - INFO - Retrieving all patients
+2026-04-17 07:05:32 - patient_store - INFO - Adding patient: Patient(id=1, name='Kenneth Baker', dob='1988-07-11', ailment='Flu')
+2026-04-17 07:05:32 - patient_store - INFO - Adding patient: Patient(id=2, name='Kathryn Murray', dob='1984-07-10', ailment='Cold')
+2026-04-17 07:05:32 - patient_store - INFO - Adding patient: Patient(id=3, name='Heidi Richard', dob='2006-04-30', ailment='Cold')
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving all patients
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving patient with ID: 1
+2026-04-17 07:05:32 - patient_store - INFO - Updating patient with ID: 1
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving patient with ID: 1
+2026-04-17 07:05:32 - patient_store - INFO - Patient updated: Patient(id=1, name='Kenneth Gilbert', dob='1988-07-11', ailment='Fever')
+2026-04-17 07:05:32 - patient_store - INFO - Deleting patient with ID: 3
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving patient with ID: 3
+2026-04-17 07:05:32 - patient_store - INFO - Patient deleted: Patient(id=3, name='Heidi Richard', dob='2006-04-30', ailment='Cold')
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving all patients
+2026-04-17 07:05:32 - patient_store - INFO - Updating patient with ID: 999
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving patient with ID: 999
+2026-04-17 07:05:32 - patient_store - INFO - Retrieving all patients

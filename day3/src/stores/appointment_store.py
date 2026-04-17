@@ -16,7 +16,7 @@ from src.models.doctor import Doctor
 from src.exceptions.AppointmentNotFoundException import AppointmentNotFoundException
 from conf.logger_conf import setup_logger
 
-logger = setup_logger()
+logger = setup_logger("appointment_store.log")
 
 class AppointmentStore:
     def __init__(self):

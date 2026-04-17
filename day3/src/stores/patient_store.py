@@ -15,7 +15,7 @@ from src.models.patient import Patient
 from src.exceptions.patient_not_found_exception import PatientNotFoundException
 from conf.logger_conf import setup_logger
 
-logger = setup_logger()
+logger = setup_logger("patient_store.log")
 
 class PatientStore:
     def __init__(self):

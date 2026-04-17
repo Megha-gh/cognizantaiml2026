@@ -1,33 +1,22 @@
-# Configure log format
 import logging
-"""
-set up logger for healthcare appln
-"""
-def setup_logger():
-    """
-    create logger for healthcare application
-    """
-    logger = logging.getLogger("healthcare_logger")
-    logger.setLevel(logging.DEBUG)
-    """
-    check if logger already has handlers to avoid duplicate logs
-    """
-    # to check already log exists or not
-    if logger.hasHandlers():
-        return logger
-    """
-    create file handler to store logs in healthcare.log file
-    """
-    #storing log inside the file so create file handler
-    file_handler = logging.FileHandler("healthcare.log")
+import os
+
+def setup_logger(filename: str):
+    # Use filename as logger name
+    logger_name = os.path.splitext(os.path.basename(filename))[0]
+
+    logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
 
-    #how the file format should be
-    """
-    create formatter to specify log message format
-    """
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s',datefmt="%Y-%m-%d %H:%M:%S")
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
+    if not logger.handlers:
+        file_handler = logging.FileHandler(filename)
+
+        formatter = logging.Formatter(
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        )
+
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+
     return logger
-
