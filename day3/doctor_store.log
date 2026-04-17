@@ -28,3 +28,5 @@
 2026-04-17 07:05:32 - doctor_store - INFO - Updating doctor with ID: 999
 2026-04-17 07:05:32 - doctor_store - INFO - Retrieving doctor with ID: 999
 2026-04-17 07:05:32 - doctor_store - INFO - Retrieving all doctors
+2026-04-17 10:56:43 - doctor_store - INFO - Retrieving doctor with ID: 999
+2026-04-17 10:57:12 - doctor_store - INFO - Retrieving doctor with ID: 999
