@@ -8,6 +8,7 @@ Description-Content-Type: text/markdown
 Requires-Dist: faker>=13.3.4
 Provides-Extra: dev
 Requires-Dist: pytest>=7.2.0; extra == "dev"
+Requires-Dist: pytest-html>=4.2.0; extra == "dev"
 Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
 Requires-Dist: black>=23.3.0; extra == "dev"
 Requires-Dist: isort>=5.10.1; extra == "dev"
