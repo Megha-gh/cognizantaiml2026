@@ -1,7 +1,5 @@
 import sys
 import os
-from datetime import date, time, timedelta
-from faker import Faker
 
 #add project root to python path
 project_root = os.path.abspath(
@@ -20,35 +18,29 @@ from src.exceptions.patient_not_found_exception import PatientNotFoundException
 from src.exceptions.AppointmentNotFoundException import AppointmentNotFoundException
 
 from conf.logger_conf import setup_logger
+"""
+entry point for the healthcare application. this module initializes the logger and defines the main function to run the application.
+"""
 
 logger = setup_logger()
-fake = Faker()
-
-# Specializations for doctors
-SPECIALIZATIONS = ["Cardiology", "Neurology", "Orthopedics", "Dermatology", "Pediatrics", "Ophthalmology"]
-
-# Common ailments
-AILMENTS = ["Flu", "Migraine", "Hypertension", "Diabetes", "Asthma", "Cold", "Fever", "Arthritis"]
 
 def doctor_app():
     """
-    Doctor CRUD operations using Faker to generate test data
+    Doctor CRUD operations
     """
     logger.info("=== DOCTOR CRUD OPERATIONS ===")
     doctor_store = DoctorStore()
     
-    # CREATE - Add doctors with Faker-generated data
-    logger.info("--- ADD DOCTORS (Using Faker) ---")
-    doctors_list = []
-    for i in range(1, 4):
-        doctor_name = f"Dr. {fake.last_name()}"
-        specialization = fake.random_element(SPECIALIZATIONS)
-        doctor = Doctor(i, doctor_name, specialization)
-        doctors_list.append(doctor)
-        doctor_store.add_doctor(doctor)
-        logger.info(f"Added: {doctor}")
+    # CREATE - Add doctors
+    logger.info("--- ADD DOCTORS ---")
+    doctor1 = Doctor(1, "Dr. Smith", "Cardiology")
+    doctor2 = Doctor(2, "Dr. Johnson", "Neurology")
+    doctor3 = Doctor(3, "Dr. Williams", "Orthopedics")
     
-    logger.info(f"Added {len(doctors_list)} doctors")
+    doctor_store.add_doctor(doctor1)
+    doctor_store.add_doctor(doctor2)
+    doctor_store.add_doctor(doctor3)
+    logger.info(f"Added 3 doctors")
     
     # READ - Get all doctors
     logger.info("--- READ ALL DOCTORS ---")
@@ -61,11 +53,9 @@ def doctor_app():
     retrieved_doctor = doctor_store.get_doctor_by_id(1)
     logger.info(f"Retrieved: {retrieved_doctor}")
     
-    # UPDATE - Update doctor details with Faker data
+    # UPDATE - Update doctor details
     logger.info("--- UPDATE DOCTOR ---")
-    new_name = f"Dr. {fake.last_name()}"
-    new_specialization = fake.random_element(SPECIALIZATIONS)
-    updated_doctor = doctor_store.update_doctor(1, new_name, new_specialization)
+    updated_doctor = doctor_store.update_doctor(1, "Dr. Smith Jr.", "Cardiothoracic Surgery")
     logger.info(f"Updated: {updated_doctor}")
     
     # DELETE - Delete doctor
@@ -85,24 +75,22 @@ def doctor_app():
 
 def patient_app():
     """
-    Patient CRUD operations using Faker to generate test data
+    Patient CRUD operations
     """
     logger.info("=== PATIENT CRUD OPERATIONS ===")
     patient_store = PatientStore()
+    from datetime import date
     
-    # CREATE - Add patients with Faker-generated data
-    logger.info("--- ADD PATIENTS (Using Faker) ---")
-    patients_list = []
-    for i in range(1, 4):
-        patient_name = fake.name()
-        patient_dob = fake.date_of_birth(minimum_age=18, maximum_age=80)
-        ailment = fake.random_element(AILMENTS)
-        patient = Patient(i, patient_name, patient_dob, ailment)
-        patients_list.append(patient)
-        patient_store.add_patient(patient)
-        logger.info(f"Added: {patient}")
+    # CREATE - Add patients
+    logger.info("--- ADD PATIENTS ---")
+    patient1 = Patient(1, "John Doe", date(1990, 5, 15), "Flu")
+    patient2 = Patient(2, "Jane Smith", date(1985, 3, 22), "Migraine")
+    patient3 = Patient(3, "Bob Johnson", date(1992, 7, 10), "Hypertension")
     
-    logger.info(f"Added {len(patients_list)} patients")
+    patient_store.add_patient(patient1)
+    patient_store.add_patient(patient2)
+    patient_store.add_patient(patient3)
+    logger.info(f"Added 3 patients")
     
     # READ - Get all patients
     logger.info("--- READ ALL PATIENTS ---")
@@ -115,11 +103,9 @@ def patient_app():
     retrieved_patient = patient_store.get_patient_by_id(1)
     logger.info(f"Retrieved: {retrieved_patient}")
     
-    # UPDATE - Update patient details with Faker data
+    # UPDATE - Update patient details
     logger.info("--- UPDATE PATIENT ---")
-    new_name = fake.name()
-    new_ailment = fake.random_element(AILMENTS)
-    updated_patient = patient_store.update_patient(1, new_name, ailment=new_ailment)
+    updated_patient = patient_store.update_patient(1, "John Doe Jr.", ailment="Cold")
     logger.info(f"Updated: {updated_patient}")
     
     # DELETE - Delete patient
@@ -139,10 +125,11 @@ def patient_app():
 
 def appointment_app(doctor_store, patient_store):
     """
-    Appointment CRUD operations using Faker to generate test data
+    Appointment CRUD operations
     """
     logger.info("=== APPOINTMENT CRUD OPERATIONS ===")
     appointment_store = AppointmentStore()
+    from datetime import date, time
     
     # Get doctors and patients for appointments
     doctors = doctor_store.get_all_doctors()
@@ -152,26 +139,16 @@ def appointment_app(doctor_store, patient_store):
         logger.warning("Not enough doctors or patients for appointments")
         return appointment_store
     
-    # CREATE - Add appointments with Faker-generated dates and times
-    logger.info("--- ADD APPOINTMENTS (Using Faker) ---")
-    appointments_list = []
-    for i in range(1, 4):
-        # Generate appointment date within next 30 days
-        appointment_date = fake.date_between(start_date='today', end_date='+30d')
-        # Generate appointment time (between 09:00 and 17:00)
-        appointment_hour = fake.random_int(min=9, max=17)
-        appointment_minute = fake.random_element([0, 15, 30, 45])
-        appointment_time = time(appointment_hour, appointment_minute)
-        
-        doctor = fake.random_element(doctors)
-        patient = fake.random_element(patients)
-        
-        appointment = Appointment(i, appointment_date, appointment_time, doctor, patient)
-        appointments_list.append(appointment)
-        appointment_store.add_appointment(appointment)
-        logger.info(f"Added: {appointment}")
+    # CREATE - Add appointments
+    logger.info("--- ADD APPOINTMENTS ---")
+    appointment1 = Appointment(1, date(2024, 6, 1), time(10, 0), doctors[0], patients[0])
+    appointment2 = Appointment(2, date(2024, 6, 5), time(14, 30), doctors[1], patients[1])
+    appointment3 = Appointment(3, date(2024, 6, 10), time(9, 0), doctors[0], patients[1])
     
-    logger.info(f"Added {len(appointments_list)} appointments")
+    appointment_store.add_appointment(appointment1)
+    appointment_store.add_appointment(appointment2)
+    appointment_store.add_appointment(appointment3)
+    logger.info(f"Added 3 appointments")
     
     # READ - Get all appointments
     logger.info("--- READ ALL APPOINTMENTS ---")
@@ -184,10 +161,9 @@ def appointment_app(doctor_store, patient_store):
     retrieved_appointment = appointment_store.get_appointment_by_id(1)
     logger.info(f"Retrieved: {retrieved_appointment}")
     
-    # UPDATE - Update appointment details with Faker data
+    # UPDATE - Update appointment details
     logger.info("--- UPDATE APPOINTMENT ---")
-    new_time = time(fake.random_int(min=9, max=17), fake.random_element([0, 15, 30, 45]))
-    updated_appointment = appointment_store.update_appointment(1, appointment_time=new_time)
+    updated_appointment = appointment_store.update_appointment(1, appointment_time=time(11, 0))
     logger.info(f"Updated: {updated_appointment}")
     
     # DELETE - Delete appointment
@@ -207,9 +183,9 @@ def appointment_app(doctor_store, patient_store):
 
 def run():
     """
-    Main function that executes all CRUD operations with Faker-generated data
+    Main function that executes all CRUD operations
     """
-    logger.info("Starting Healthcare Application with Faker-generated data")
+    logger.info("Starting Healthcare Application")
     
     # Run doctor operations
     doctor_store = doctor_app()
