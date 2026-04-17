@@ -1,1 +1,17 @@
 2026-04-16 09:49:48 - healthcare_logger - INFO - app run
+2026-04-17 03:49:10 - healthcare_logger - INFO - app run
+2026-04-17 04:13:19 - healthcare_logger - INFO - app run
+2026-04-17 04:13:30 - healthcare_logger - INFO - app run
+2026-04-17 04:32:11 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:32:11 - healthcare_logger - INFO - app run
+2026-04-17 04:32:29 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:32:29 - healthcare_logger - INFO - app run
+2026-04-17 04:43:06 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:43:06 - healthcare_logger - INFO - Added appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:43:06 - healthcare_logger - INFO - Retrieving all appointments:
+2026-04-17 04:43:06 - healthcare_logger - INFO - app run
+2026-04-17 04:44:56 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:44:56 - healthcare_logger - INFO - Added appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:44:56 - healthcare_logger - INFO - app run
+2026-04-17 04:46:58 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 04:46:58 - healthcare_logger - INFO - app run

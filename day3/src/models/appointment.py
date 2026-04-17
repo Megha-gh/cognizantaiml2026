@@ -13,4 +13,4 @@ class Appointment:
         self.time = time
 
     def __str__(self):
-        return f"Appointment {id={self.appointment_id}, patient: '{self.patient}', doctor: '{self.doctor}', date: '{self.date}', time: '{self.time}'}"
+        return f"Appointment(id={self.appointment_id}, patient='{self.patient}', doctor='{self.doctor}', date='{self.date}', time='{self.time}')"

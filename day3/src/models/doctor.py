@@ -6,4 +6,4 @@ class Doctor:
         self.specialization = specialization
 
     def __str__(self):
-        return f"Doctor {id={self.id}, name: '{self.name}', specialization: '{self.specialization}'}"
+        return f"Doctor(id={self.id}, name='{self.name}', specialization='{self.specialization}')"
