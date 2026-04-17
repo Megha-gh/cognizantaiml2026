@@ -15,3 +15,193 @@
 2026-04-17 04:44:56 - healthcare_logger - INFO - app run
 2026-04-17 04:46:58 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
 2026-04-17 04:46:58 - healthcare_logger - INFO - app run
+2026-04-17 05:22:26 - healthcare_logger - INFO - Starting Healthcare Application
+2026-04-17 05:22:26 - healthcare_logger - INFO - === DOCTOR CRUD OPERATIONS ===
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ADD DOCTORS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding doctor: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding doctor: Doctor(id=2, name='Dr. Johnson', specialization='Neurology')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding doctor: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Added 3 doctors
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ ALL DOCTORS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:22:26 - healthcare_logger - INFO - Doctor: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Doctor: Doctor(id=2, name='Dr. Johnson', specialization='Neurology')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Doctor: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ DOCTOR BY ID ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving doctor with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieved: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- UPDATE DOCTOR ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating doctor with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving doctor with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Doctor updated: Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updated: Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- DELETE DOCTOR ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleting doctor with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving doctor with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Doctor deleted: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleted: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:22:26 - healthcare_logger - INFO - Remaining doctors: 2
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating doctor with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving doctor with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - ERROR - Exception caught: Doctor with ID 999 not found
+2026-04-17 05:22:26 - healthcare_logger - INFO - === PATIENT CRUD OPERATIONS ===
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ADD PATIENTS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding patient: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding patient: Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding patient: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Added 3 patients
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ ALL PATIENTS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:22:26 - healthcare_logger - INFO - Patient: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Patient: Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Patient: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ PATIENT BY ID ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving patient with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieved: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- UPDATE PATIENT ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating patient with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving patient with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Patient updated: Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updated: Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- DELETE PATIENT ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleting patient with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving patient with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Patient deleted: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleted: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:22:26 - healthcare_logger - INFO - Remaining patients: 2
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating patient with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving patient with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - ERROR - Exception caught: Patient with ID 999 not found
+2026-04-17 05:22:26 - healthcare_logger - INFO - === APPOINTMENT CRUD OPERATIONS ===
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ADD APPOINTMENTS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding appointment: Appointment(id=2, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=2, name='Dr. Johnson', specialization='Neurology')', date='2024-06-05', time='14:30:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding appointment: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Added 3 appointments
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ ALL APPOINTMENTS ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all appointments
+2026-04-17 05:22:26 - healthcare_logger - INFO - Appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Appointment: Appointment(id=2, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=2, name='Dr. Johnson', specialization='Neurology')', date='2024-06-05', time='14:30:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Appointment: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- READ APPOINTMENT BY ID ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving appointment with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieved: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- UPDATE APPOINTMENT ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating appointment with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving appointment with ID: 1
+2026-04-17 05:22:26 - healthcare_logger - INFO - Appointment updated: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='11:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updated: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='11:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- DELETE APPOINTMENT ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleting appointment with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving appointment with ID: 3
+2026-04-17 05:22:26 - healthcare_logger - INFO - Appointment deleted: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Deleted: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving all appointments
+2026-04-17 05:22:26 - healthcare_logger - INFO - Remaining appointments: 2
+2026-04-17 05:22:26 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:22:26 - healthcare_logger - INFO - Updating appointment with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - INFO - Retrieving appointment with ID: 999
+2026-04-17 05:22:26 - healthcare_logger - ERROR - Exception caught: Appointment with ID 999 not found
+2026-04-17 05:22:26 - healthcare_logger - INFO - Healthcare Application completed successfully
+2026-04-17 05:22:26 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')', doctor='Doctor(id=1, name='Dr. Smith', specialization='Cardiology')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:22:26 - healthcare_logger - INFO - app run
+2026-04-17 05:57:21 - healthcare_logger - INFO - Starting Healthcare Application
+2026-04-17 05:57:21 - healthcare_logger - INFO - === DOCTOR CRUD OPERATIONS ===
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ADD DOCTORS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding doctor: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding doctor: Doctor(id=2, name='Dr. Johnson', specialization='Neurology')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding doctor: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Added 3 doctors
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ ALL DOCTORS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:57:21 - healthcare_logger - INFO - Doctor: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Doctor: Doctor(id=2, name='Dr. Johnson', specialization='Neurology')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Doctor: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ DOCTOR BY ID ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving doctor with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieved: Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- UPDATE DOCTOR ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating doctor with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving doctor with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Doctor updated: Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updated: Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- DELETE DOCTOR ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleting doctor with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving doctor with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Doctor deleted: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleted: Doctor(id=3, name='Dr. Williams', specialization='Orthopedics')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:57:21 - healthcare_logger - INFO - Remaining doctors: 2
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating doctor with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving doctor with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - ERROR - Exception caught: Doctor with ID 999 not found
+2026-04-17 05:57:21 - healthcare_logger - INFO - === PATIENT CRUD OPERATIONS ===
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ADD PATIENTS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding patient: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding patient: Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding patient: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Added 3 patients
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ ALL PATIENTS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:57:21 - healthcare_logger - INFO - Patient: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Patient: Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Patient: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ PATIENT BY ID ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving patient with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieved: Patient(id=1, name='John Doe', dob='1990-05-15', ailment='Flu')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- UPDATE PATIENT ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating patient with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving patient with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Patient updated: Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updated: Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- DELETE PATIENT ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleting patient with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving patient with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Patient deleted: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleted: Patient(id=3, name='Bob Johnson', dob='1992-07-10', ailment='Hypertension')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:57:21 - healthcare_logger - INFO - Remaining patients: 2
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating patient with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving patient with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - ERROR - Exception caught: Patient with ID 999 not found
+2026-04-17 05:57:21 - healthcare_logger - INFO - === APPOINTMENT CRUD OPERATIONS ===
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all doctors
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all patients
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ADD APPOINTMENTS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding appointment: Appointment(id=2, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=2, name='Dr. Johnson', specialization='Neurology')', date='2024-06-05', time='14:30:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Adding appointment: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Added 3 appointments
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ ALL APPOINTMENTS ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all appointments
+2026-04-17 05:57:21 - healthcare_logger - INFO - Appointment: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Appointment: Appointment(id=2, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=2, name='Dr. Johnson', specialization='Neurology')', date='2024-06-05', time='14:30:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Appointment: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- READ APPOINTMENT BY ID ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving appointment with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieved: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='10:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- UPDATE APPOINTMENT ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating appointment with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving appointment with ID: 1
+2026-04-17 05:57:21 - healthcare_logger - INFO - Appointment updated: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='11:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updated: Appointment(id=1, patient='Patient(id=1, name='John Doe Jr.', dob='1990-05-15', ailment='Cold')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-01', time='11:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- DELETE APPOINTMENT ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleting appointment with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving appointment with ID: 3
+2026-04-17 05:57:21 - healthcare_logger - INFO - Appointment deleted: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Deleted: Appointment(id=3, patient='Patient(id=2, name='Jane Smith', dob='1985-03-22', ailment='Migraine')', doctor='Doctor(id=1, name='Dr. Smith Jr.', specialization='Cardiothoracic Surgery')', date='2024-06-10', time='09:00:00')
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving all appointments
+2026-04-17 05:57:21 - healthcare_logger - INFO - Remaining appointments: 2
+2026-04-17 05:57:21 - healthcare_logger - INFO - --- ERROR HANDLING ---
+2026-04-17 05:57:21 - healthcare_logger - INFO - Updating appointment with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - INFO - Retrieving appointment with ID: 999
+2026-04-17 05:57:21 - healthcare_logger - ERROR - Exception caught: Appointment with ID 999 not found
+2026-04-17 05:57:21 - healthcare_logger - INFO - Healthcare Application completed successfully
