@@ -1,5 +1,3 @@
-# display customers
-
 import sys
 import os
 
@@ -7,6 +5,7 @@ import os
 project_root = os.path.abspath(
     os.path.join(os.path.dirname(__file__), '..', '..')
 )
+
 sys.path.append(project_root)
 
 from src.configurations.conf import Config
@@ -28,3 +27,4 @@ def display_customers(customer_store):
 if __name__ == "__main__":
     customer_store = CustomerStoreImpl()
     display_customers(customer_store)
+
