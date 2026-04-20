@@ -1,7 +1,7 @@
 #create corporate class inherit from customer
 from pydantic import Field
-from src.models.customer import Customer
-from src.models.company_type import CompanyType
+from models.customer import Customer
+from models.company_type import CompanyType
 
 class Corporate(Customer):
     company_type: CompanyType

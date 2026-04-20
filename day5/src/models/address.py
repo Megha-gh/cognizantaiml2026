@@ -1,6 +1,6 @@
 #create address class associate to customer using pydantic
 from pydantic import BaseModel, Field
-from src.models.customer import Customer
+from models.customer import Customer
 
 class Address(BaseModel):
     customer: Customer

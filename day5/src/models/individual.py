@@ -2,8 +2,8 @@
 from datetime import date
 from pydantic import Field
 from pydantic import FieldValidator
-from src.models.customer import Customer
-from src.models.gender import Gender
+from models.customer import Customer
+from models.gender import Gender
 
 class Individual(Customer):
     gender: Gender
