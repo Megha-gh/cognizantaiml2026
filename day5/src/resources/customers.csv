@@ -1,6 +1,6 @@
 customer_id,first_name,last_name,email,phone_no
-CUST001,Megha,Gururaj,megha.gururaj@example.com,9876543210
-CUST002,Arjun,Nair,arjun.nair@example.com,9123456780
-CUST003,Anita,Sharma,anita.sharma@example.com,9988776655
-CUST004,Rohit,Menon,rohit.menon@example.com,9090909090
-CUST005,Sneha,Kapoor,sneha.kapoor@example.com,9812345678
+1,Megha,Gururaj,megha.gururaj@example.com,9876543210
+2,Arjun,Nair,arjun.nair@example.com,9123456780
+3,Anita,Sharma,anita.sharma@example.com,9988776655
+4,Rohit,Menon,rohit.menon@example.com,9090909090
+5,Sneha,Kapoor,sneha.kapoor@example.com,9812345678
